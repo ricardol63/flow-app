@@ -4555,7 +4555,7 @@ function MilestoneNotesHover({ milestone, mouseY, mouseX, P, onEnter, onLeave })
     /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: 13,
-        color: P.tm,
+        color: isWk ? P.td : P.tm,
         fontFamily: "'DM Sans',sans-serif",
         lineHeight: 1.6
       },
@@ -5113,7 +5113,7 @@ function TimelinePhilosophy({
     }, p.title)), /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: 14,
-        color: P.tm,
+        color: isWk ? P.td : P.tm,
         lineHeight: 1.7,
         paddingLeft: 28
       }
@@ -6155,7 +6155,7 @@ function TimeGrid({
         top: -7,
         fontSize: 12,
         fontFamily: "-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',system-ui,sans-serif",
-        color: P.tm,
+        color: isWk ? P.td : P.tm,
         fontWeight: isNoon ? 700 : 600,
         letterSpacing: "-0.01em"
       }
@@ -8136,7 +8136,7 @@ function IdealWeekEditor({
       style: {
         height: IWH,
         fontSize: 11,
-        color: P.tm,
+        color: isWk ? P.td : P.tm,
         fontFamily: "'DM Mono',monospace",
         textAlign: "right",
         paddingRight: 8,
@@ -8173,7 +8173,7 @@ function IdealWeekEditor({
         justifyContent: "center",
         fontSize: 12,
         fontWeight: 600,
-        color: P.tm,
+        color: isWk ? P.td : P.tm,
         fontFamily: "'DM Mono',monospace",
         borderBottom: "1px solid " + P.bd
       }
@@ -8684,7 +8684,7 @@ function ShortcutsPanel({
       style: {
         fontSize: 10,
         fontWeight: 600,
-        color: P.tm,
+        color: isWk ? P.td : P.tm,
         fontFamily: "'DM Mono',monospace",
         textTransform: "uppercase",
         letterSpacing: "0.08em",
@@ -9793,7 +9793,7 @@ function GoalsWorkspace({
         style: {
           flex: 1,
           fontSize: 14,
-          color: P.tm,
+          color: isWk ? P.td : P.tm,
           fontStyle: "italic"
         }
       }, item.text));
@@ -11902,7 +11902,7 @@ function InboxPanel({
       style: {
         fontSize: 10,
         fontWeight: 600,
-        color: P.tm,
+        color: isWk ? P.td : P.tm,
         fontFamily: "'DM Mono',monospace",
         textTransform: "uppercase",
         letterSpacing: "0.06em"
@@ -13656,7 +13656,7 @@ function OneDayMethod({
         padding: "4px 8px",
         fontSize: 10,
         fontWeight: 600,
-        color: P.tm,
+        color: isWk ? P.td : P.tm,
         fontFamily: "'DM Mono',monospace",
         letterSpacing: "0.04em"
       }
@@ -13703,7 +13703,7 @@ function OneDayMethod({
         padding: "4px 8px",
         fontSize: 10,
         fontWeight: 600,
-        color: P.tm,
+        color: isWk ? P.td : P.tm,
         fontFamily: "'DM Mono',monospace",
         letterSpacing: "0.04em",
         marginTop: pendingInbox.length > 0 ? 6 : 0,
@@ -15811,7 +15811,7 @@ function VisionWriter({goal, initialVision, onSave, onClose, P}) {
       React.createElement("div", {style: {padding: "12px 24px", borderTop: "1px solid " + P.bd + "44", display: "flex", justifyContent: "space-between"}},
         step > 0 ? React.createElement("button", {onClick: function() { setStep(step - 1); },
           style: {padding: "8px 16px", borderRadius: 8, border: "1px solid " + P.bd, background: "transparent",
-            color: P.tm, fontSize: 12, cursor: "pointer"}}, "Back") : React.createElement("div"),
+            color: isWk ? P.td : P.tm, fontSize: 12, cursor: "pointer"}}, "Back") : React.createElement("div"),
         step < 3 ? React.createElement("button", {onClick: function() { setStep(step + 1); },
           style: {padding: "8px 20px", borderRadius: 8, border: "none", background: P.ac,
             color: "#fff", fontSize: 12, cursor: "pointer", fontWeight: 600}}, "Next \u2192")
@@ -16663,7 +16663,7 @@ function PresenceJourney({ entries, onSave, onClose, gratEntries, gratPrompts, P
           style: {
             width: 40, height: 40, borderRadius: "50%",
             border: "1px solid " + P.bd, background: "transparent",
-            color: P.tm, fontSize: 16, cursor: "pointer"
+            color: isWk ? P.td : P.tm, fontSize: 16, cursor: "pointer"
           }
         }, "\u2190"),
         // Step dots
@@ -16879,7 +16879,7 @@ function StrengthsPanel({
         borderRadius: 8,
         border: "none",
         background: P.sfh,
-        color: P.tm,
+        color: isWk ? P.td : P.tm,
         fontSize: 12,
         cursor: "pointer",
         fontFamily: "'DM Mono',monospace"
@@ -17841,7 +17841,7 @@ function StartMyDay({
         style: {
           fontSize: 10,
           fontWeight: 600,
-          color: P.tm,
+          color: isWk ? P.td : P.tm,
           fontFamily: "'DM Mono',monospace",
           textTransform: "uppercase",
           letterSpacing: "0.06em"
@@ -18096,7 +18096,7 @@ function StartMyDay({
         style: {
           fontSize: 10,
           fontWeight: 600,
-          color: P.tm,
+          color: isWk ? P.td : P.tm,
           fontFamily: "'DM Mono',monospace",
           textTransform: "uppercase",
           letterSpacing: "0.06em"
@@ -18772,7 +18772,7 @@ function PlanDay({
           border: "1px solid " + P.bd + "33",
           borderRadius: 8,
           fontSize: 13,
-          color: P.tm,
+          color: isWk ? P.td : P.tm,
           fontFamily: "'DM Sans',sans-serif"
         }
       }, /*#__PURE__*/React.createElement("span", {
@@ -18854,7 +18854,7 @@ function PlanDay({
           border: "1px solid " + P.bd + "33",
           borderRadius: 8,
           fontSize: 13,
-          color: P.tm,
+          color: isWk ? P.td : P.tm,
           fontFamily: "'DM Sans',sans-serif"
         }
       }, /*#__PURE__*/React.createElement("span", {
@@ -18957,7 +18957,7 @@ function PlanDay({
             border: "1px solid " + P.bd + "33",
             borderRadius: 8,
             fontSize: 13,
-            color: P.tm,
+            color: isWk ? P.td : P.tm,
             fontFamily: "'DM Sans',sans-serif"
           }
         }, /*#__PURE__*/React.createElement("span", {
@@ -19153,7 +19153,7 @@ function PlanDay({
             overflowY: "auto",
             flex: 1,
             fontSize: 13,
-            color: P.tm,
+            color: isWk ? P.td : P.tm,
             lineHeight: 1.7
           }
         },
@@ -19459,7 +19459,7 @@ function PlanDay({
         borderRadius: 8,
         padding: "12px 14px",
         fontSize: 12,
-        color: P.tm,
+        color: isWk ? P.td : P.tm,
         fontFamily: "'DM Sans',sans-serif",
         lineHeight: 1.6
       }
@@ -19721,7 +19721,7 @@ function ReviewDay({
       key: t.id,
       style: {
         fontSize: 13,
-        color: P.tm,
+        color: isWk ? P.td : P.tm,
         padding: "3px 0"
       }
     }, "\u2713 ", t.text);
